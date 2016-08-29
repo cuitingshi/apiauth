@@ -1,0 +1,49 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+APP_FIELDS	db.py	/^APP_FIELDS = ('appid', 'appkey', 'accesstoken', 'starttime', 'expiretime')$/;"	v
+AuthApi	authapi.py	/^class AuthApi:$/;"	c
+COLLECTION_APPS	db.py	/^COLLECTION_APPS = 'apps'$/;"	v
+COLLECTION_USERS	db.py	/^COLLECTION_USERS = 'users'$/;"	v
+COLSIZ	db.py	/^COLSIZ = 20$/;"	v
+DBNAME	db.py	/^DBNAME = 'API_AUTH'$/;"	v
+LoginError	handler.py	/^class LoginError(Exception):$/;"	c
+MongoDB	db.py	/^class MongoDB(object):$/;"	c
+TOKEN_VALID_HOURS	db.py	/^TOKEN_VALID_HOURS = 2$/;"	v
+USER_FIELDS	db.py	/^USER_FIELDS = ('login', 'phone', 'email', 'job')$/;"	v
+__init__	authapi.py	/^    def __init__(self):$/;"	m	class:AuthApi
+__init__	db.py	/^    def __init__(self, address='localhost'):$/;"	m	class:MongoDB
+__init__	handler.py	/^    def __init__(self, value):$/;"	m	class:LoginError
+__str__	handler.py	/^    def __str__(self):$/;"	m	class:LoginError	file:
+auth_api	handler.py	/^auth_api = Api(auth_server)$/;"	v
+auth_server	handler.py	/^auth_server = Flask(__name__)$/;"	v
+cformat	db.py	/^cformat = lambda s: s.upper().ljust(COLSIZ)$/;"	v
+createApp	authapi.py	/^    def createApp(app_name, app_type, service_name):$/;"	m	class:AuthApi
+dbDump	db.py	/^    def dbDump(self):$/;"	m	class:MongoDB
+deleteAllApps	db.py	/^    def deleteAllApps(self):$/;"	m	class:MongoDB
+deleteAllUsers	db.py	/^    def deleteAllUsers(self):$/;"	m	class:MongoDB
+deleteAppInfo	db.py	/^    def deleteAppInfo(self, rmid):$/;"	m	class:MongoDB
+finish	db.py	/^    def finish(self):$/;"	m	class:MongoDB
+genToken	authapi.py	/^    def genToken(grant_type, app_id, app_key_secret):$/;"	m	class:AuthApi
+getSalt	db.py	/^def getSalt(chars=string.letters + string.digits):$/;"	f
+home	handler.py	/^def home(**kwds):$/;"	f
+insertAppInfo	db.py	/^    def insertAppInfo(self, number, apps_info):$/;"	m	class:MongoDB
+insertUserInfo	db.py	/^    def insertUserInfo(self, number, users_reg):$/;"	m	class:MongoDB
+isTokenValid	authapi.py	/^    def isTokenValid(token):$/;"	m	class:AuthApi
+main	authapi.py	/^def main():$/;"	f
+main	db.py	/^def main():$/;"	f
+main	handler.py	/^def main():$/;"	f
+mongo	handler.py	/^mongo = None$/;"	v
+queryAppIDExist	db.py	/^    def queryAppIDExist(self, appid):$/;"	m	class:MongoDB
+queryUserExist	db.py	/^    def queryUserExist(self, who, passwd):$/;"	m	class:MongoDB
+refreshToken	authapi.py	/^    def refreshToken(grant_type, app_id, app_key_secret, token):$/;"	m	class:AuthApi
+registerDev	authapi.py	/^    def registerDev(self, uname, upasswd):$/;"	m	class:AuthApi
+retsiterDev	handler.py	/^def retsiterDev():$/;"	f
+signinDev	handler.py	/^def signinDev():$/;"	f
+signout	handler.py	/^def signout():$/;"	f
+tformat	db.py	/^tformat = lambda s: str(s).title().ljust(COLSIZ)$/;"	v
+updateAppInfo	db.py	/^    def updateAppInfo(self, appid, token):$/;"	m	class:MongoDB
+updateUserInfo	db.py	/^    def updateUserInfo(self, login, passwd, info):$/;"	m	class:MongoDB
